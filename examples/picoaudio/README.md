@@ -1,9 +1,10 @@
 # picoaudio - VGM playback example for Pico Audio Pack
 
 This is an experimental implementation for playback VGM files on [Pico Audio Pack](https://shop.pimoroni.com/products/pico-audio-pack?variant=32369490853971) with Raspberry Pi Pico.
-Almost of all code is based on [YMFM](https://github.com/aaronsgiles/ymfm). The code for handling TAR file from flash is based on [pico-infones](https://github.com/shuichitakano/pico-infones) and [PicoSystem_InfoNes](https://github.com/fhoedemakers/PicoSystem_InfoNes).
+Almost of all code is based on [YMFM](https://github.com/aaronsgiles/ymfm). 
+The code for handling TAR file from flash is based on [pico-infones](https://github.com/shuichitakano/pico-infones) and [PicoSystem_InfoNes](https://github.com/fhoedemakers/PicoSystem_InfoNes).
 Pico has limited power for handling FM emulation, some of VGM files (using multi chip) will not be able to listen normaly:(
-I other words, There are rooms for improve, So I appreciate your warm support :)
+In the other words, There are rooms for improve, So I appreciate your warm support :)
 
 Outrun for YM2151(with out SEGA PCM) sounds good:)
 
@@ -22,6 +23,7 @@ $ make
 ```
 ### Install UF2 File
 Put "ymfm/examples/picoaudio/build/picoaudio.uf2" into Raspberry Pico.
+Download from here >> [picoaudio.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio.uf2)
 
 ### Customise
 You can customise something by edit "ymfm/examples/picoaudio/CMakeLists.txt"
