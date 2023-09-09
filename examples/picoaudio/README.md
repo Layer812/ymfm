@@ -7,7 +7,6 @@ Pico has limited power for handling FM emulation, some of VGM files (using multi
 In the other words, There are rooms for improve, So I appreciate your warm support :)
 
 Outrun for YM2151(with out SEGA PCM) sounds good:)
-Not good for AY-3-8910 or YM2419...
 
 ## Important notice
 This software gives Raspberry PI Pico a higher core voltage & over clock, It may cause damege on your device. No warranties.
@@ -24,20 +23,22 @@ $ make
 ```
 ### Install UF2 File
 Put "ymfm/examples/picoaudio/build/picoaudio.uf2" into Raspberry Pico.
-You can download from here >> [picoaudio.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio.uf2)
-
+You can download from here 
+ [picoaudio.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio.uf2) Fast but MONO version.
+ [picoaudio_stereo.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio_stereo.uf2) Slow but STEREO version.
 ### Customise
 You can customise something by edit "ymfm/examples/picoaudio/CMakeLists.txt"
 
 ```
 About over clocking
-$       PICO_FLASH_SPI_CLKDIV=3
-$       CORE_CLOCK=304000
-$       CORE_VOLTAGE=VREG_VOLTAGE_1_30
+       PICO_FLASH_SPI_CLKDIV=3
+       CORE_CLOCK=304000
+       CORE_VOLTAGE=VREG_VOLTAGE_1_30
 ```
 ```
 About Stereo output (1 means MONO(default) / 0 means STEREO)
-$              PICO_AUDIO_I2S_MONO_OUTPUT=1
+              PICO_AUDIO_I2S_MONO_OUTPUT=1
+              PICO_AUDIO_I2S_MONO_INPUT=1
 ```
 After edit, you need build UF2 file again.
 
@@ -77,3 +78,6 @@ picotool load ym2608.rom -t bin -o 0x10098000
 ## Change logs
 ### 0.1-alpha
 Initial realease.
+
+### 0.1-beta
+fix: fix bug YM2149(SSG) sample_rate in YMFM.

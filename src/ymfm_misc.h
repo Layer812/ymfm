@@ -68,7 +68,7 @@ public:
 	void save_restore(ymfm_saved_state &state);
 
 	// pass-through helpers
-	uint32_t sample_rate(uint32_t input_clock) const { return input_clock / ssg_engine::CLOCK_DIVIDER / 8; }
+	uint32_t sample_rate(uint32_t input_clock) const { return input_clock / ssg_engine::CLOCK_DIVIDER ; }
 
 	// read access
 	uint8_t read_data();
