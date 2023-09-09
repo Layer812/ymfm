@@ -131,9 +131,20 @@ constexpr uint32_t array_size(ArrayType (&array)[ArraySize])
 
 inline uint8_t count_leading_zeros(uint32_t value)
 {
+    static char dt[32] = {
+        0, 31, 9, 30, 3, 8, 13, 29, 2, 5, 7, 21, 12, 24, 28, 19,
+        1, 10, 4, 14, 6, 22, 25, 20, 11, 15, 23, 26, 16, 27, 17, 18
+    };
 	if (value == 0)
 		return 32;
-	return __builtin_clz(value);
+
+    value |= value>>1;
+    value |= value>>2;
+    value |= value>>4;
+    value |= value>>8;
+    value |= value>>16;
+    value++;
+    return dt[value*0x076be629>>27];
 }
 
 #elif defined(_MSC_VER)
@@ -241,6 +252,8 @@ inline int16_t roundtrip_fp(int32_t value)
 		return -32768;
 	if (value > 32767)
 		return 32767;
+
+	return value;
 
 	// we need to count the number of leading sign bits after the sign
 	// we can use count_leading_zeros if we invert negative values
