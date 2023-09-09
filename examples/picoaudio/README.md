@@ -7,6 +7,7 @@ Pico has limited power for handling FM emulation, some of VGM files (using multi
 In the other words, There are rooms for improve, So I appreciate your warm support :)
 
 Outrun for YM2151(with out SEGA PCM) sounds good:)
+Not good for AY-3-8910 or YM2419...
 
 ## Important notice
 This software gives Raspberry PI Pico a higher core voltage & over clock, It may cause damege on your device. No warranties.
@@ -23,7 +24,7 @@ $ make
 ```
 ### Install UF2 File
 Put "ymfm/examples/picoaudio/build/picoaudio.uf2" into Raspberry Pico.
-Download from here >> [picoaudio.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio.uf2)
+You can download from here >> [picoaudio.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio.uf2)
 
 ### Customise
 You can customise something by edit "ymfm/examples/picoaudio/CMakeLists.txt"
