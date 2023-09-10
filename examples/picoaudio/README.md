@@ -26,8 +26,8 @@ Put "ymfm/examples/picoaudio/build/picoaudio.uf2" into Raspberry Pico.
 You can download from here 
  [picoaudio.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio.uf2) Fast but MONO version.
  [picoaudio_stereo.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio_stereo.uf2) Slow but STEREO version.
-### Customise
-You can customise something by edit "ymfm/examples/picoaudio/CMakeLists.txt"
+### Customize
+You can customize some parameter with editing "ymfm/examples/picoaudio/CMakeLists.txt"
 
 ```
 About over clocking
@@ -65,7 +65,7 @@ picotool load ym2608.rom -t bin -o 0x10098000
 
 ## Thanks
 - [Aaron Giles](https://github.com/aaronsgiles/ymfm) Greate project!
-- [shuichitakano](https://github.com/shuichitakano/pico-infones) I could know lot of inspiration from his code.
+- [shuichitakano](https://github.com/shuichitakano/pico-infones) I got a lot of inspiration about pico from his code.
 - [yunkya2](https://github.com/yunkya2/pico-mdx/tree/master/pico-mdx) I'm enjoying to listen mdx.
 - [Frank](https://github.com/fhoedemakers/) and [newschooldev](https://github.com/newschooldev) They motivated me to do this:)
 
