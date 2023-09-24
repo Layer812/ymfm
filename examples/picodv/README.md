@@ -15,19 +15,16 @@ This software gives Raspberry PI Pico a higher core voltage & over clock, It may
 ### Build UF2 file
 ```
 $ git clone https://github.com/Layer812/ymfm
-$ cd ymfm/examples/picoaudio
+$ cd ymfm/examples/picodv
 $ mkdir build
 $ cd build
 $ cmake ..
 $ make
 ```
 ### Install UF2 File
-Put "ymfm/examples/picoaudio/build/picoaudio.uf2" into Raspberry Pico.
-You can download from here 
- [picoaudio.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio.uf2) Fast but MONO version.
- [picoaudio_stereo.uf2](https://github.com/Layer812/ymfm/blob/main/examples/picoaudio/picoaudio_stereo.uf2) Slow but STEREO version.
+Put "ymfm/examples/picodv/build/picoaudio.uf2" into Raspberry Pico.
 ### Customize
-You can customize some parameter with editing "ymfm/examples/picoaudio/CMakeLists.txt"
+You can customize some parameter with editing "ymfm/examples/picodv/CMakeLists.txt"
 
 ```
 About over clocking
