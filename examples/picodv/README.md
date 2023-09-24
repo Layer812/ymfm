@@ -1,12 +1,12 @@
-# picoaudio - VGM playback example for Pico Audio Pack
+# picoaudio - VGM playback example for Pico DV Demo Base
 
-This is an experimental implementation for playback VGM files on [Pico Audio Pack](https://shop.pimoroni.com/products/pico-audio-pack?variant=32369490853971) with Raspberry Pi Pico.
+This is an experimental implementation for playback VGM files on [Pico DV Demo Base](https://shop.pimoroni.com/products/pimoroni-pico-dv-demo-base?variant=39494203998291) with Raspberry Pi Pico.
 Almost of all code is based on [YMFM](https://github.com/aaronsgiles/ymfm). 
 The code for handling TAR file from flash is based on [pico-infones](https://github.com/shuichitakano/pico-infones) and [PicoSystem_InfoNes](https://github.com/fhoedemakers/PicoSystem_InfoNes).
 Pico has limited power for handling FM emulation, some of VGM files (using multi chip) will not be able to listen normaly:(
 In the other words, There are rooms for improve, So I appreciate your warm support :)
 
-Outrun for YM2151(with out SEGA PCM) sounds good:)
+YoukaiDochuki for YM2151(with out SEGA PCM) sounds good:)
 
 ## Important notice
 This software gives Raspberry PI Pico a higher core voltage & over clock, It may cause damege on your device. No warranties.
