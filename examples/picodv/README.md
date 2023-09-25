@@ -23,6 +23,8 @@ $ make
 ```
 ### Install UF2 File
 Put "ymfm/examples/picodv/build/picoaudio.uf2" into Raspberry Pico.
+Precompiled binaly is [here](https://github.com/Layer812/ymfm/blob/main/examples/picodv/picoaudio.uf2)
+
 ### Customize
 You can customize some parameter with editing "ymfm/examples/picodv/CMakeLists.txt"
 
